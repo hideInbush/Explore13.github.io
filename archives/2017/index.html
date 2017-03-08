@@ -3,16 +3,14 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2017 | Hexo</title>
+  <title>Archieven: 2017 | halo.Explore13</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="halo.Explore13">
 <meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="halo.Explore13">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<meta name="twitter:title" content="halo.Explore13">
   
   
     <link rel="icon" href="/favicon.png">
@@ -21,21 +19,26 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/mend.css">
   
 
 </head>
 
 <body>
-  <div id="container">
+  <div style="margin:auto;text-align: center;display: block;" id="overplay">
+    <div id="logo" style="display: inline-block;position: relative;overflow: hidden;">
+      <span class="logoText" id="logoText">EXPLORING.</span>
+      <div class="logoTextBg" id="logoTextBg"></div>
+    </div>
+  </div>
+
+  <div id="container" style="display: none;">
     <div id="wrap">
       <header id="header">
   <div id="banner"></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+
     </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">
@@ -45,16 +48,9 @@
         
           <a class="main-nav-link" href="/archives">Archives</a>
         
-      </nav>
-      <nav id="sub-nav">
+          <a class="main-nav-link" href="/about">About Me</a>
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
     </div>
   </div>
 </header>
@@ -75,13 +71,32 @@
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
+      <a href="/2017/03/06/halo/" class="archive-article-date">
+  <time datetime="2017-03-06T09:22:20.912Z" itemprop="datePublished">Mar 6</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/03/06/halo/">如何在大学让英语四六级逆袭到600分以上？</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
       <a href="/2017/03/06/hello-world/" class="archive-article-date">
   <time datetime="2017-03-06T02:35:45.506Z" itemprop="datePublished">Mar 6</time>
 </a>
       
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/06/hello-world/">Hello World</a>
+      <a class="archive-article-title" href="/2017/03/06/hello-world/">《金刚狼3》自断一臂，最完整的删减片段盘点</a>
     </h1>
   
 
@@ -94,60 +109,16 @@
   
 
 </section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/03/06/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 LzhI<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-  </div>
-</footer>
-    </div>
+    <!--nav-->
     <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About Me</a>
   
 </nav>
     
@@ -162,5 +133,31 @@
 <script src="/js/script.js"></script>
 
   </div>
-</body>
+  </body>
+  <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      var obj1=document.getElementById("logoTextBg");
+      var obj2=document.getElementById("logoText");
+
+      var overplay = document.getElementById("overplay");
+      var stage = document.getElementById("container");
+
+      obj1.style.transition="-webkit-transform 1000ms cubic-bezier(0.77, 0, 0.175, 1)";
+      obj1.style.webkitTransform="translate(100%)";
+
+      var t=setTimeout(function(){
+        obj2.style.opacity = 1;
+        obj1.style.transition="-webkit-transform 1000ms cubic-bezier(0.77, 0, 0.175, 1)";
+        obj1.style.webkitTransform="translate(200%)";
+
+
+        var x = setTimeout(function(){
+          overplay.style.display = "none";
+          stage.style.display = "block";
+        },1000)
+
+      },1000);
+    })
+  </script>
 </html>

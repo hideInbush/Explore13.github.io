@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+#main{
+  float: none;
+  margin: 0 auto;
+  display: block;
+}
+
+#container{
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-align-items: center;  
+  -ms-flex-align: center;  
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+.logoText{
+    font-family: "Open Sans", Impact;
+    letter-spacing: .04em;
+    -webkit-transition: color .5s cubic-bezier(.08,.03,.22,.87);
+    transition: color .5s cubic-bezier(.08,.03,.22,.87);
+    color: #dcdcdc;
+    font-size: 2rem;
+    opacity: 0;
+    text-shadow: none;
+}
+
+.logoText:hover{
+    -webkit-transition: color .5s cubic-bezier(.08,.03,.22,.87);
+    transition: color .5s cubic-bezier(.08,.03,.22,.87);
+    color: #4e4544;
+}
+
+.logoTextBg{
+    position: absolute;
+    width: 100%;
+    height: 43px;
+    background-color: #161616;
+    opacity: 1;
+    top: 0px;
+    left: -100%;
+}
