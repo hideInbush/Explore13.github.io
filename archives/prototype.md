@@ -4,12 +4,13 @@
 * https://github.com/mqyqingfeng/Blog/issues/2
 * [深入理解javascript原型和闭包（4）——隐式原型 - 王福朋 - 博客园](http://www.cnblogs.com/wangfupeng1988/p/3979290.html)
 * [JavaScript中的“多继承”](https://zhuanlan.zhihu.com/p/34693209)
+
 #面试/模块/从原型到原型链#
 
 ## Prototype
 每个 ~*函数*~ 都有一个prototype属性，prototype是函数才会有的属性。函数的prototype属性指向了一个对象（属性的集合），这个对象正是调用该构造函数而创建的实例的原型 🌟，同时这个对象默认的只有一个叫做constructor的属性，指向这个函数的本身
 如下图，Object就是一个函数，右侧就是它的原型，下面就是它的几个其他属性（是不是很有种似曾相识的感觉）
-![](https://github.com/hideInbush/Explore13.github.io/blob/master/assets/image/prototype/1.png)
+![](https://github.com/hideInbush/Explore13.github.io/blob/master/archives/assets/image/prototype/1.png)
 
 你也可以在自己自定义的方法的prototype中新增自己的属性
 ```
@@ -40,7 +41,7 @@ var fn = new Fn();
 #### 什么是原型？每一个javascript对象（null除外）在创建的时候就会与之关联的另一个对象，这个对象就是我们所说的原型，每一个对象都会从原型“继承”属性
 #### 每个对象都有一个隐藏属性 __proto__ （隐式原型），这个属性指向创建这个对象的函数的prototype，即 fn.__proto__ = Fn.prototype
 #### 自定义函数的prototype本质上就是和 var obj = {} 是一样的，都是被Object创建，所以它的__proto__指向的就是Object.prototype。
-![](https://github.com/hideInbush/Explore13.github.io/blob/master/assets/image/prototype/2.png)
+![](https://github.com/hideInbush/Explore13.github.io/blob/master/archives/assets/image/prototype/2.png)
 
 ```
 再看一个栗子
@@ -48,7 +49,7 @@ console.log(Object instanceof Function) //true
 console.log(Function instanceof Object) //true
 console.log(Function instanceof Function) //true
 ```
-![](https://github.com/hideInbush/Explore13.github.io/blob/master/assets/image/prototype/3.png)
+![](https://github.com/hideInbush/Explore13.github.io/blob/master/archives/assets/image/prototype/3.png)
 
 
 ## constructor
@@ -74,7 +75,7 @@ console.log(person.constructor === Person) //true
 
 ## 原型的原型
 	* 其实原型对象就是通过Object构造函数生成的，结合之前所讲
-![](https://github.com/hideInbush/Explore13.github.io/blob/master/assets/image/prototype/4.png)
+![](https://github.com/hideInbush/Explore13.github.io/blob/master/archives/assets/image/prototype/4.png)
 	* 那么Object.prototype的原型呢？是null
 
 ## 原型链
@@ -129,7 +130,7 @@ show();
 * 判断一个变量是不是对象，值类型的类型判断用typeof，引用类型的类型判断用instanceof
 * (A instanceof B ) Instanceof的判断规则是：沿着A的__proto__这条线来找，同时沿着B的prototype这条线来找，如果两条线能找到同一个引用，即同一个对象，那么就返回true，如果找到终点还未重合，则返回false
 * 那么按照以上的规则，来看一下 f1 instance Object，明显就是true
-![](https://github.com/hideInbush/Explore13.github.io/blob/master/assets/image/prototype/5.png)
+![](https://github.com/hideInbush/Explore13.github.io/blob/master/archives/assets/image/prototype/5.png)
 
 
 ### 栗子2
