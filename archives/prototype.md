@@ -7,7 +7,6 @@
 #面试/模块/从原型到原型链#
 
 ## Prototype
-- - - -
 每个 ~*函数*~ 都有一个prototype属性，prototype是函数才会有的属性。函数的prototype属性指向了一个对象（属性的集合），这个对象正是调用该构造函数而创建的实例的原型 🌟，同时这个对象默认的只有一个叫做constructor的属性，指向这个函数的本身
 如下图，Object就是一个函数，右侧就是它的原型，下面就是它的几个其他属性（是不是很有种似曾相识的感觉）
 ![](https://github.com/hideInbush/Explore13.github.io/blob/master/assets/image/prototype/1.png)
@@ -32,7 +31,6 @@ $div.attr('name', 'halo');
 
 
 ## __proto__
-- - - -
 这是每一个 ~*Javascript对象*~ （除了null，函数也是对象）都具有的一个属性，叫_proto_，这个属性会指向该对象的原型。🌟
 ```
 function Fn() {
@@ -54,7 +52,6 @@ console.log(Function instanceof Function) //true
 
 
 ## constructor
-- - - -
 每个原型都有一个constructor属性指向关联的构造函数。
 ```
 function Person() {
@@ -66,25 +63,21 @@ console.log(person.constructor === Person) //true
 ```
 
 ## Javascript中的继承是通过原型链来体现的
-- - - -
 所以真的是继承吗？
 > 继承意味着复制操作，然后javascript默认并不会复制对象的属性，相反，javascript只是在两个对象之间创建一个关联，这样，一个对象就可以通过委托访问另一个对象的属性和函数，所以与其叫继承，委托的说法反而更准确些  
 > from 《你不知道的javascript》  
 
 
 ## 实例与原型
-- - - -
 当读取实例的属性时，如果找不到，就会查找与对象关联的原型中的属性，如果还查不到，就去找原型的原型，一直找到最顶层为止。
 
 
 ## 原型的原型
-- - - -
 	* 其实原型对象就是通过Object构造函数生成的，结合之前所讲
 ![](https://github.com/hideInbush/Explore13.github.io/blob/master/assets/image/prototype/4.png)
 	* 那么Object.prototype的原型呢？是null
 
 ## 原型链
-- - - -
 访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着__proto__这条链向上找
 ```
 function Foo(){ }
@@ -101,7 +94,6 @@ console.log(f1.b); //200
 实际应用中，如何区分一个属性到底是基本的还是从原型链中找到的呢？—-hasOwnProperty，而这个方法恰恰来自Object.prototype
 
 ## new一个函数时发生了什么？
-- - - -
 	1. 创建一个空对象，把一个空对象的proto属性设置为People.prototype
 	2. 执行函数People，函数里面的this代表刚刚创建的新对象
 	3. 返回这个对象
@@ -117,7 +109,6 @@ p.sayName();
 ```
 
 ## 最后来看看几个栗子
-- - - -
 ### 栗子1
 ```
 function show(x) {
