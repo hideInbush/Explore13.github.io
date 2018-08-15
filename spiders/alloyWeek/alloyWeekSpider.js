@@ -1,4 +1,3 @@
-/* eslint-disable */
 //http://www.alloyteam.com/alloyshare/admin/cgi-bin/get_weekly/?period=15
 const http = require('http');
 const url = require('url');
