@@ -43,7 +43,7 @@ function doRequest(page) {
       });
 
       page ++;
-      writeInFile('renren.md', resultList, page);
+      writeInFile('renrenFed.md', resultList, page);
 
     });
   });
