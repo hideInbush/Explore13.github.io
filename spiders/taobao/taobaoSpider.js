@@ -16,23 +16,26 @@ function doRequest(page) {
     return;
   }
   const options = {
-    // hostname: 'api.github.com',
-    hostname: 'taobaofed.org',
+    hostname: 'api.github.com',
+    // hostname: 'taobaofed.org',
     port: 1086,
-    // path: page === 1 ? '' : `/repos/taobaofed/blog/contents/page/${page}/index.html`,
-    path: page === 1 ? '' : `/page/${page}`,
+    path: page === 1 ? '/repos/taobaofed/blog/contents/index.html' : `/repos/taobaofed/blog/contents/page/${page}/index.html`,
+    // path: page === 1 ? '' : `/page/${page}`,
     method: 'GET',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
     },
     timeout: 15000,
   };
+
+  const url = `https://${options.hostname}${options.path}`;
+
   console.log(`当前请求地址：${options.hostname}${options.path}`);
-  
+
   superagent
-    .get('https://api.github.com/repos/taobaofed/blog/contents/page/2/index.html')
+    .get(url)
     .end((err, res) => {
-      const rawData = Base64.decode(res.body.content);
+      const rawData = Base64.decode(res.body.content).match(/<div class="archives">(.|\n)*<nav id="page-nav">/g)[0];
       rawData.match(/<a href.* class="title">.*\/a>/g).map(item => {
         const title = item.match(/>(.*)<\/a>/)[1];
         const url = `http://taobaofed.org${item.match(/href="([^"]*)"/)[1]}`;
@@ -42,7 +45,7 @@ function doRequest(page) {
         });
       });
 
-      page ++;
+      page++;
       writeInFile('taobaoFed.md', resultList, page);
     })
 }
