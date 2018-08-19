@@ -9,3 +9,4 @@
 7. [this](./archives/this.md)
 8. [模块化](./archives/模块化.md)
 9. [promise](./archives/promise.md)
+10. [js垃圾回收机制](./archives/js垃圾回收机制.md)
