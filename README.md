@@ -16,4 +16,5 @@
 1. [dom事件流](./archives/dom事件流.md)
 2. [跨域](./archives/浏览器/跨域.md)
 3. [事件循环机制](./archives/浏览器/事件循环机制.md)
-4. [浏览器缓存机制](./archives/浏览器/浏览器缓存机制.md)
+4. [存储](./archives/浏览器/存储.md)
+5. [浏览器缓存机制](./archives/浏览器/浏览器缓存机制.md)
