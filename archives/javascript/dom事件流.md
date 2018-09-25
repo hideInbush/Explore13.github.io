@@ -1,6 +1,6 @@
 # DOM事件流
 
-![](./assets/image/dom事件流/1.png)
+![](./assets/domEvent-1.png)
 
 1. 事件冒泡
 	* 事件开始时由最具体的元素接受，然后逐级向上传播到较为不具体的节点
