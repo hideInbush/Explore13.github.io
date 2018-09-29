@@ -1,7 +1,10 @@
 # BFC和IFC
 
+## Formatting Context（格式化上下文）
+> 指页面中一个渲染区域，并且拥有一套渲染规则，它决定了其子元素如何定位，以及与其他元素的相互关系和作用。
+
 ## BFC（块格式化上下文）
-> 块格式化上下文（Block Formatting Context，BFC）是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域
+> 块格式化上下文（Block Formatting Context，BFC）它是一个独立的渲染区域，只有Block-level box参与， 它规定了内部的Block-level Box如何布局，并且与这个区域外部毫不相干。
 
 ## 如何创建BFC：
 * 根元素或包含根元素的元素
