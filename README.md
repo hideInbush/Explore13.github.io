@@ -12,6 +12,10 @@
 9. [promise](./archives/javascript/promise.md)
 10. [js垃圾回收机制](./archives/javascript/js垃圾回收机制.md)
 
+## react
+1. [jsx和虚拟DOM](./archives/react/jsx和虚拟DOM.md)
+2. [diff算法](./archives/react/diff算法.md)
+
 ## 浏览器
 1. [dom事件流](./archives/browser/dom事件流.md)
 2. [跨域](./archives/browser/跨域.md)
