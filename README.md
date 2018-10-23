@@ -28,8 +28,9 @@
 
 ## CSS
 1. [盒子模型](.／archives/css/盒子模型.md)
-2. [BFC](./archives/css/BFC.md)
-3. [层叠上下文](./archives/css/层叠上下文.md)
+2. [格式化上下文](./archives/css/格式化上下文.md)
+3. [深入理解inline-block](./archives/css/inline-block.md)
+4. [层叠上下文](./archives/css/层叠上下文.md)
 
 
 # Spiders
