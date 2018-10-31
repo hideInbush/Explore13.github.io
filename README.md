@@ -14,10 +14,13 @@
 8. [模块化](./archives/javascript/模块化.md)
 9. [promise](./archives/javascript/promise.md)
 10. [js垃圾回收机制](./archives/javascript/js垃圾回收机制.md)
+11. [作用域链](./archives/javascript/作用域链.md)
+12. [变量对象](./archives/javascript/变量对象.md)
 
 ## react
 1. [jsx和虚拟DOM](./archives/react/jsx和虚拟DOM.md)
 2. [diff算法](./archives/react/diff算法.md)
+3. [路由](./archives/react/路由.md)
 
 ## 浏览器
 1. [dom事件流](./archives/browser/dom事件流.md)
