@@ -28,6 +28,7 @@
 3. [事件循环机制](./archives/browser/事件循环机制.md)
 4. [存储](./archives/browser/存储.md)
 5. [浏览器缓存机制](./archives/browser/浏览器缓存机制.md)
+6. [渲染原理](./archives/browser/渲染原理.md)
 
 ## CSS
 1. [盒子模型](.／archives/css/盒子模型.md)
