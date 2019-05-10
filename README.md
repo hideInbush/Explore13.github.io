@@ -1,4 +1,6 @@
 
+[Welcome to 🌈Blog](https://hideinbush.github.io/Explore13.github.io/dist/index.html)
+
 # Archives
 
 > 朴素的开始了 本分的坚持了 不懈的锻炼了 
